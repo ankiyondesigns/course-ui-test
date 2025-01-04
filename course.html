@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enroll in Course</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <h1 class="text-lg font-semibold text-gray-800">
+          Introduction: [Brewing Basics]
+        </h1>
+        <button class="text-gray-800 focus:outline-none" id="openSidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+      <div class="bg-white w-64 h-full p-6 absolute top-0 right-0 shadow-lg">
+        <!-- Close Button -->
+        <button
+          id="closeSidebar"
+          class="text-gray-800 text-xl absolute top-4 right-4"
+        >
+          X
+        </button>
+
+        <!-- Sidebar Title -->
+        <h2 class="text-xl font-semibold text-gray-800 mb-6">Brewing Basics</h2>
+
+        <!-- Lesson Links -->
+        <ul>
+          <li>
+            <a href="#" class="block text-gray-800 hover:text-blue-500 mb-4"
+              >Lesson 1: Introduction</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-gray-800 hover:text-blue-500 mb-4"
+              >Lesson 2: Brewing Techniques</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-gray-800 hover:text-blue-500 mb-4"
+              >Lesson 3: Latte Art</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-gray-800 hover:text-blue-500 mb-4"
+              >Lesson 4: Espresso Making</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-gray-800 hover:text-blue-500 mb-4"
+              >Lesson 5: Advanced Techniques</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Course Section -->
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <video class="w-full rounded-md mb-6 shadow-md" controls>
+          <source src="/path/to/intro-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Course Overview
+          </h2>
+          <p class="text-gray-700 mb-4">
+            This course provides a comprehensive guide to mastering the art of
+            coffee preparation. Whether you're a beginner or a seasoned
+            enthusiast, this course will enhance your skills and knowledge.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <li>
+              <strong>Prerequisites:</strong> Basic knowledge of coffee
+              preparation.
+            </li>
+            <li><strong>Duration:</strong> 4 weeks (self-paced).</li>
+            <li>
+              <strong>Materials Provided:</strong> Video tutorials and quizzes.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-xl font-semibold text-gray-800 mb-6">Quiz</h2>
+
+        <!-- Question 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-lg font-medium text-gray-800 mb-4">
+            1. What is the most important factor in brewing coffee?
+          </h3>
+          <div class="space-y-3">
+            <label class="block text-gray-700">
+              <input type="radio" name="q1" value="A" class="mr-2" /> Freshness
+              of the beans
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q1" value="B" class="mr-2" /> Water
+              temperature
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q1" value="C" class="mr-2" /> Grind size
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q1" value="D" class="mr-2" /> All of the
+              above
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-lg font-medium text-gray-800 mb-4">
+            2. How long should espresso shots be extracted?
+          </h3>
+          <div class="space-y-3">
+            <label class="block text-gray-700">
+              <input type="radio" name="q2" value="A" class="mr-2" /> 15-20
+              seconds
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q2" value="B" class="mr-2" /> 25-30
+              seconds
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q2" value="C" class="mr-2" /> 30-40
+              seconds
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q2" value="D" class="mr-2" /> 5-10
+              seconds
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-lg font-medium text-gray-800 mb-4">
+            3. What is the ideal water temperature for brewing coffee?
+          </h3>
+          <div class="space-y-3">
+            <label class="block text-gray-700">
+              <input type="radio" name="q3" value="A" class="mr-2" /> 160-170°F
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q3" value="B" class="mr-2" /> 190-205°F
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q3" value="C" class="mr-2" /> 210-220°F
+            </label>
+            <label class="block text-gray-700">
+              <input type="radio" name="q3" value="D" class="mr-2" /> 120-140°F
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex justify-center">
+          <button
+            class="bg-none text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 hover:text-white border-2 border-blue-500"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete or Next Lesson Section -->
+    <section class="bg-white py-6">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Complete Link -->
+        <div>
+          <a
+            href="#"
+            class="text-gray-800 text-sm font-medium hover:text-blue-500"
+          >
+            Mark as Completed
+          </a>
+        </div>
+
+        <!-- Next Lesson Button -->
+        <div>
+          <button
+            class="bg-blue-500 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-600"
+          >
+            Next Lesson
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-200 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm">&copy; 2025 Coffee Life. All rights reserved.</p>
+        <div class="mt-4">
+          <a href="/" class="text-gray-400 hover:text-white mx-2">Home</a>
+          <a href="#" class="text-gray-400 hover:text-white mx-2"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-gray-400 hover:text-white mx-2"
+            >Terms of Service</a
+          >
+          <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Placeholder for Footer Section -->
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
