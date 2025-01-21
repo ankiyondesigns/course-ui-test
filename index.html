@@ -17,10 +17,10 @@
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4">
+    <header class="bg-white drop-shadow-lg py-4">
       <div class="container mx-auto px-4 flex justify-between items-center">
         <div class="flex items-center">
-          <img src="assets/img/logo.svg" alt="Logo" class="h-8 w-auto" />
+          <img src="assets/img/coffee solution-02.png" alt="Logo" class="bg-red-50"  width="50" height="50"/>
         </div>
         <div>
           <button
@@ -34,29 +34,34 @@
     <!-- Placeholder for Header Nav Bar -->
 
     <!-- Hero Section -->
-    <section class="bg-gray-50 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <div class="mb-8">
-          <img
-            src="assets/img/hero.jpg"
-            alt="Hero Image"
-            class="mx-auto w-full max-w-sm rounded-lg shadow-md"
-          />
-        </div>
-        <h1 class="text-2xl font-semibold text-gray-800 mb-4">
-          Master the Art of Coffee Preparation
-        </h1>
-        <p class="text-gray-600 mb-6">
-          Join our courses to learn the secrets of brewing the perfect cup of
-          coffee, from bean to cup.
-        </p>
-        <button
-          class="bg-none text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 hover:text-white border-2 border-blue-500"
+    <section class="relative bg-gray-50">
+      <!-- Full-width image with overlay content -->
+      <div class="relative">
+        <img
+          src="assets/img/hero.jpg"
+          alt="Hero Image"
+          class="w-full h-[60vh] object-cover md:h-[80vh]"
+        />
+        <!-- Overlay content -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-center px-4 text-white"
         >
-          Explore Courses
-        </button>
+          <h1 class="text-2xl md:text-4xl font-extrabold mb-4">
+            Master the Art of Coffee Preparation
+          </h1>
+          <p class="text-sm md:text-lg mb-6">
+            Join our courses to learn the secrets of brewing the perfect cup of
+            coffee, from bean to cup.
+          </p>
+          <button
+            class="bg-blue-500 px-6 py-3 rounded-md text-sm md:text-base font-medium hover:bg-blue-600 transition-all"
+          >
+            Explore Courses
+          </button>
+        </div>
       </div>
     </section>
+    
     <!-- Placeholder for Hero Section -->
 
     <!-- Course Section -->
